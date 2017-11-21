@@ -9,16 +9,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     float m_minMoveDistance = 0.2f; //Minimum distance required to make the character move
     ThirdPersonCharacter m_Character;   // A reference to the ThirdPersonCharacter on the object
-    CameraRaycaster cameraRaycaster;
-    Vector3 currentClickTarget;
+    CameraRaycaster m_cameraRaycaster;
+    Vector3 m_currentClickTarget;
 
     bool m_isInDirectMode = false;
 
     private void Start()
     {
-        cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
+        m_cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
         m_Character = GetComponent<ThirdPersonCharacter>();
-        currentClickTarget = transform.position;
+        m_currentClickTarget = transform.position;
     }
 
     // Fixed update is called in sync with physics
@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.G))
         {
             m_isInDirectMode = !m_isInDirectMode;
+            m_currentClickTarget = transform.position;
 
         }
 
@@ -68,21 +69,21 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
 
-            switch (cameraRaycaster.layerHit)
+            switch (m_cameraRaycaster.LayerHit)
             {
                 case Layers.Walkable:
-                    currentClickTarget = cameraRaycaster.hit.point;
+                    m_currentClickTarget = m_cameraRaycaster.RayHit.point;
                     break;
                 case Layers.Enemy:
                     Debug.Log("ATTACK ENEMY!");
                     break;
                 default:
-                    currentClickTarget = transform.position;
+                    m_currentClickTarget = transform.position;
                     break;
             }
 
         }
-        Vector3 moveVector = currentClickTarget - transform.position;
+        Vector3 moveVector = m_currentClickTarget - transform.position;
 
         if (moveVector.magnitude >= m_minMoveDistance)
         {
