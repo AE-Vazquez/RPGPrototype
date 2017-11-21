@@ -7,18 +7,23 @@ public class PlayerMovement : MonoBehaviour
 {
    
     [SerializeField]
-    float m_minMoveDistance = 0.2f; //Minimum distance required to make the character move
+    float m_walkMoveRadius = 0.2f; //Minimum distance required to make the character move
+    [SerializeField]
+    float m_attackMoveRadius = 0.2f; //Minimum distance required to make the attack
+
     ThirdPersonCharacter m_Character;   // A reference to the ThirdPersonCharacter on the object
     CameraRaycaster m_cameraRaycaster;
-    Vector3 m_currentClickTarget;
+    Vector3 m_currentDestination;
 
-    bool m_isInDirectMode = false;
+    Vector3 m_clickPoint;
+
+    bool m_isInDirectMode = false; //Flag to switch between mouse & gamepad controller
 
     private void Start()
     {
         m_cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
         m_Character = GetComponent<ThirdPersonCharacter>();
-        m_currentClickTarget = transform.position;
+        m_currentDestination = transform.position;
     }
 
     // Fixed update is called in sync with physics
@@ -27,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.G))
         {
             m_isInDirectMode = !m_isInDirectMode;
-            m_currentClickTarget = transform.position;
+            m_currentDestination = transform.position;
 
         }
 
@@ -68,31 +73,62 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-
+            m_clickPoint = m_cameraRaycaster.RayHit.point;
             switch (m_cameraRaycaster.LayerHit)
             {
                 case Layers.Walkable:
-                    m_currentClickTarget = m_cameraRaycaster.RayHit.point;
+                    
+                    m_currentDestination = ShortDestination(m_clickPoint, m_walkMoveRadius);
                     break;
                 case Layers.Enemy:
-                    Debug.Log("ATTACK ENEMY!");
+
+                    m_currentDestination = ShortDestination(m_clickPoint, m_attackMoveRadius);
                     break;
                 default:
-                    m_currentClickTarget = transform.position;
+                    m_currentDestination = transform.position;
                     break;
             }
 
         }
-        Vector3 moveVector = m_currentClickTarget - transform.position;
+        WalkToPosition();
+    }
 
-        if (moveVector.magnitude >= m_minMoveDistance)
+    private void WalkToPosition()
+    {
+        Vector3 moveVector = m_currentDestination - transform.position;
+
+        if (moveVector.magnitude >= 0)
         {
             m_Character.Move(moveVector, false, false);
         }
         else
         {
-            m_Character.Move(Vector3.zero,false,false);
+            m_Character.Move(Vector3.zero, false, false);
         }
+    }
+
+    Vector3 ShortDestination(Vector3 destination, float shortFactor)
+    {
+        Vector3 reduction = (destination - transform.position).normalized * shortFactor;
+        return destination - reduction;
+
+    }
+
+    void OnDrawGizmos()
+    {
+        //Movement Gizmos
+        Gizmos.color = new Color(0, 0, 0, 0.6f);
+        Gizmos.DrawLine(transform.position, m_clickPoint);
+
+        Gizmos.DrawSphere(m_clickPoint, 0.05f);
+
+        Gizmos.DrawSphere(m_currentDestination, 0.1f);
+
+        //Attack Gizmos
+        Gizmos.color = new Color(1, 0, 0, 0.6f);
+        Gizmos.DrawWireSphere(transform.position, m_attackMoveRadius);
+
+
     }
 }
 
