@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 moveVector = m_currentDestination - transform.position;
 
-        if (moveVector.magnitude >= 0)
+        if (moveVector.magnitude >= 0.01f)
         {
             m_Character.Move(moveVector, false, false);
         }
