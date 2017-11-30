@@ -5,7 +5,7 @@ using UnityStandardAssets.Characters.ThirdPerson;
 [RequireComponent(typeof (ThirdPersonCharacter))]
 public class PlayerMovement : MonoBehaviour
 {
-   
+   /*
     [SerializeField]
     float m_walkMoveRadius = 0.2f; //Minimum distance required to make the character move
     [SerializeField]
@@ -26,25 +26,7 @@ public class PlayerMovement : MonoBehaviour
         m_currentDestination = transform.position;
     }
 
-    // Fixed update is called in sync with physics
-    private void FixedUpdate()
-    {
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            m_isInDirectMode = !m_isInDirectMode;
-            m_currentDestination = transform.position;
 
-        }
-
-        if (m_isInDirectMode)
-        {
-            ProcessDirectMovement();
-        }
-        else
-        {
-            ProcessMouseMovement();
-        }
-    }
 
     private void ProcessDirectMovement()
     {
@@ -130,5 +112,6 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+    */
 }
 

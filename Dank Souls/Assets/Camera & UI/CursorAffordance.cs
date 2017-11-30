@@ -23,29 +23,35 @@ public class CursorAffordance : MonoBehaviour {
     [SerializeField]
     Vector2 unknownCursorOffset = Vector2.zero;
 
+    //TODO: Refacor this
+    [SerializeField] const int m_walkableLayer = 8;
+    [SerializeField] const int m_enemyLayer = 9;
+
+
 
     CameraRaycaster m_CameraRayCaster;
 	// Use this for initialization
 	void Start () {
         m_CameraRayCaster = GetComponent<CameraRaycaster>();
-        m_CameraRayCaster.OnLayerChangedEvent += OnLayerChanged;
+        m_CameraRayCaster.OnCursorLayerChangedEvent += OnLayerChanged;
 
     }
 	
-	void OnLayerChanged (Layers newLayer) {
+	void OnLayerChanged (int newLayer) {
 
         switch (newLayer)
         {
-            case Layers.Walkable:
+            case m_walkableLayer:
                 Cursor.SetCursor(m_walkCursor, walkCursorOffset, CursorMode.Auto);
                 break;
-            case Layers.Enemy:
+            case m_enemyLayer:
                 Cursor.SetCursor(m_attackCursor, attackCursorOffset, CursorMode.Auto);
                 break;
             default:
                 Cursor.SetCursor(m_unknownCursor, unknownCursorOffset, CursorMode.Auto);
                 break;
         }
+ 
 
     }
 }
