@@ -23,7 +23,7 @@ public class CursorAffordance : MonoBehaviour {
     [SerializeField]
     Vector2 unknownCursorOffset = Vector2.zero;
 
-    //TODO: Refacor this
+    //TODO: Refactor this not to be assigned in script
     [SerializeField] const int m_walkableLayer = 8;
     [SerializeField] const int m_enemyLayer = 9;
 
