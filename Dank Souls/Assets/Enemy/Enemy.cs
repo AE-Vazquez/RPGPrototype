@@ -6,8 +6,9 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class Enemy : CharacterBase {
 
-    [SerializeField] float m_chaseDistance;
-    [SerializeField] float m_chaseStopRadius;
+    [SerializeField] float m_chaseRadius;
+    [SerializeField] float m_attackRadius;
+    [SerializeField] float m_rangedAttackRadius;
 
     private Vector3 m_initialPosition;
 
@@ -15,6 +16,7 @@ public class Enemy : CharacterBase {
     NavMeshAgent m_navMeshAgent;
 
     GameObject m_playerGO;
+    private float aux_distanceToPlayer;
 
     void Awake()
     {
@@ -34,16 +36,53 @@ public class Enemy : CharacterBase {
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if(Vector3.Distance(m_playerGO.transform.position,transform.position)<=m_chaseDistance)
+
+        //TODO refactor this
+        m_AICharacterControl.SetTarget(null);
+        m_navMeshAgent.SetDestination(transform.position);
+
+        aux_distanceToPlayer = Vector3.Distance(m_playerGO.transform.position, transform.position);
+
+        if (aux_distanceToPlayer <= m_rangedAttackRadius)
         {
-            m_AICharacterControl.SetTarget(m_playerGO.transform);
+            //TODO: ranged attack against player
+            Debug.Log("Ranged Attack against player");
+        }
+        else if (aux_distanceToPlayer <= m_chaseRadius)
+        {
+            if(aux_distanceToPlayer<=m_attackRadius)
+            {
+                //TODO: melee attack against player
+                Debug.Log("Melee Attack against player");
+            }
+            else
+            {
+                m_AICharacterControl.SetTarget(m_playerGO.transform);
+            }
+            
         }
         else
         {
-            m_AICharacterControl.SetTarget(null);
             m_navMeshAgent.SetDestination(m_initialPosition);
         }
 	}
-    
+
+    void OnDrawGizmos()
+    {
+        //Chasing range gizmo
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, m_chaseRadius);
+
+        //Melee Attack Gizmos
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, m_attackRadius);
+
+        //Ranged Attack Gizmos
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, m_rangedAttackRadius);
+
+
+    }
+
+
 }
