@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterBase : MonoBehaviour {
-
-
+public class CharacterBase : MonoBehaviour,IDamageable
+{
     [SerializeField]
     float m_maxHealthPoints=100f;
 
@@ -12,7 +11,7 @@ public class CharacterBase : MonoBehaviour {
 
     public float HealthAsPercentage
     {
-        get { return m_maxHealthPoints / m_currentHealthPoints; }
+        get { return m_currentHealthPoints / m_maxHealthPoints; }
     }
 
     void Awake()
@@ -21,27 +20,18 @@ public class CharacterBase : MonoBehaviour {
 
     }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void TakeDamage(float damage)
+    void IDamageable.TakeDamage(float damage)
     {
-        m_currentHealthPoints -= damage;
+        Debug.Log(gameObject.name + " Taking " + damage + " damage");
+        m_currentHealthPoints = Mathf.Clamp(m_currentHealthPoints - damage, 0f, m_maxHealthPoints);
 
-        if (m_currentHealthPoints <= 0)
+        if(m_currentHealthPoints<=0)
         {
-            m_currentHealthPoints = 0;
-            //TODO: Generate death events
-        }
+           
+            //TODO: Handle death
 
-        //TODO: Generate HP changes events
+        }
 
     }
 }

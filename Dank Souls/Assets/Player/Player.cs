@@ -5,18 +5,4 @@ using UnityEngine;
 public class Player : CharacterBase {
 
 
-    void Awake()
-    {
-
-    }
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

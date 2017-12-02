@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     ThirdPersonCharacter m_Character;   // A reference to the ThirdPersonCharacter on the object
     CameraRaycaster m_cameraRaycaster;
     AICharacterControl m_AICharacterControl;
-    NavMeshAgent m_navMeshAGent;
+
 
     Vector3 m_currentDestination;
     Vector3 m_clickPoint;
@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         m_cameraRaycaster = Camera.main.GetComponent<CameraRaycaster>();
         m_Character = GetComponent<ThirdPersonCharacter>();
         m_AICharacterControl = GetComponent<AICharacterControl>();
-        m_navMeshAGent = GetComponent<NavMeshAgent>();
 
         m_currentDestination = transform.position;
 
