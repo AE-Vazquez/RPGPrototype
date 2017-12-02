@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 7a9c3d84192970c459506ea9f0ee9fdd
+timeCreated: 1512239458
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: asi_l
+    100002: asi_r
+    100004: ear_l
+    100006: ear_r
+    100008: hair
+    100010: hara
+    100012: hit_a_l
+    100014: hit_a_r
+    100016: hit_b_l
+    100018: hit_b_r
+    100020: hit_c_l
+    100022: hit_c_r
+    100024: Jam
+    100026: jaw
+    100028: kao
+    100030: kata_l
+    100032: kata_r
+    100034: kosi
+    100036: koy_a_l
+    100038: koy_a_r
+    100040: koy_b_l
+    100042: koy_b_r
+    100044: koy_c_l
+    100046: koy_c_r
+    100048: kus_a_l
+    100050: kus_a_l 1
+    100052: kus_b_l
+    100054: kus_b_r
+    100056: kus_c_l
+    100058: kus_c_r
+    100060: lip
+    100062: mabuta
+    100064: momo_l
+    100066: momo_r
+    100068: //RootNode
+    100070: mune
+    100072: nak_a_l
+    100074: nak_a_r
+    100076: nak_b_l
+    100078: nak_b_r
+    100080: nak_c_l
+    100082: nak_c_r
+    100084: nino_l
+    100086: nino_r
+    100088: oya_a_l
+    100090: oya_a_r
+    100092: oya_b_l
+    100094: oya_b_r
+    100096: oya_c_l
+    100098: oya_c_r
+    100100: sune_l
+    100102: sune_r
+    100104: tail
+    100106: te_l
+    100108: te_r
+    100110: toe_l
+    100112: toe_r
+    100114: ude_l
+    100116: ude_r
+    100118: waki_l
+    100120: waki_r
+    400000: asi_l
+    400002: asi_r
+    400004: ear_l
+    400006: ear_r
+    400008: hair
+    400010: hara
+    400012: hit_a_l
+    400014: hit_a_r
+    400016: hit_b_l
+    400018: hit_b_r
+    400020: hit_c_l
+    400022: hit_c_r
+    400024: Jam
+    400026: jaw
+    400028: kao
+    400030: kata_l
+    400032: kata_r
+    400034: kosi
+    400036: koy_a_l
+    400038: koy_a_r
+    400040: koy_b_l
+    400042: koy_b_r
+    400044: koy_c_l
+    400046: koy_c_r
+    400048: kus_a_l
+    400050: kus_a_l 1
+    400052: kus_b_l
+    400054: kus_b_r
+    400056: kus_c_l
+    400058: kus_c_r
+    400060: lip
+    400062: mabuta
+    400064: momo_l
+    400066: momo_r
+    400068: //RootNode
+    400070: mune
+    400072: nak_a_l
+    400074: nak_a_r
+    400076: nak_b_l
+    400078: nak_b_r
+    400080: nak_c_l
+    400082: nak_c_r
+    400084: nino_l
+    400086: nino_r
+    400088: oya_a_l
+    400090: oya_a_r
+    400092: oya_b_l
+    400094: oya_b_r
+    400096: oya_c_l
+    400098: oya_c_r
+    400100: sune_l
+    400102: sune_r
+    400104: tail
+    400106: te_l
+    400108: te_r
+    400110: toe_l
+    400112: toe_r
+    400114: ude_l
+    400116: ude_r
+    400118: waki_l
+    400120: waki_r
+    4300000: Jam
+    9500000: //RootNode
+    13700000: Jam
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__109
+    second: {fileID: 2100000, guid: b43710b93f716d741b38bc7d8d734967, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__121
+    second: {fileID: 2100000, guid: b9331f2946965e54aa94a7be0379ecf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__49
+    second: {fileID: 2100000, guid: dc73ff5ed7bea8144bffe6aae8907134, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__61
+    second: {fileID: 2100000, guid: 9c826a8fbfa70aa468a91d499b2ea676, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__73
+    second: {fileID: 2100000, guid: a9e6faa058908974ea2d06978a329568, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__85
+    second: {fileID: 2100000, guid: 57f33e5a396321c46b00a71842b463f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__97
+    second: {fileID: 2100000, guid: 1c1de39d3f9f3d742b91243abf0958fc, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,846 @@
+fileFormatVersion: 2
+guid: aabcc44131a7f944e8b18d6503f56242
+timeCreated: 1512239459
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: asi_l
+    100002: asi_r
+    100004: ear_l
+    100006: ear_r
+    100008: hair
+    100010: hara
+    100012: hit_a_l
+    100014: hit_a_r
+    100016: hit_b_l
+    100018: hit_b_r
+    100020: hit_c_l
+    100022: hit_c_r
+    100024: Jam
+    100026: jaw
+    100028: kao
+    100030: kata_l
+    100032: kata_r
+    100034: kosi
+    100036: koy_a_l
+    100038: koy_a_r
+    100040: koy_b_l
+    100042: koy_b_r
+    100044: koy_c_l
+    100046: koy_c_r
+    100048: kus_a_l
+    100050: kus_a_l 1
+    100052: kus_b_l
+    100054: kus_b_r
+    100056: kus_c_l
+    100058: kus_c_r
+    100060: lip
+    100062: mabuta
+    100064: momo_l
+    100066: momo_r
+    100068: //RootNode
+    100070: mune
+    100072: nak_a_l
+    100074: nak_a_r
+    100076: nak_b_l
+    100078: nak_b_r
+    100080: nak_c_l
+    100082: nak_c_r
+    100084: nino_l
+    100086: nino_r
+    100088: oya_a_l
+    100090: oya_a_r
+    100092: oya_b_l
+    100094: oya_b_r
+    100096: oya_c_l
+    100098: oya_c_r
+    100100: sune_l
+    100102: sune_r
+    100104: tail
+    100106: te_l
+    100108: te_r
+    100110: toe_l
+    100112: toe_r
+    100114: ude_l
+    100116: ude_r
+    100118: waki_l
+    100120: waki_r
+    400000: asi_l
+    400002: asi_r
+    400004: ear_l
+    400006: ear_r
+    400008: hair
+    400010: hara
+    400012: hit_a_l
+    400014: hit_a_r
+    400016: hit_b_l
+    400018: hit_b_r
+    400020: hit_c_l
+    400022: hit_c_r
+    400024: Jam
+    400026: jaw
+    400028: kao
+    400030: kata_l
+    400032: kata_r
+    400034: kosi
+    400036: koy_a_l
+    400038: koy_a_r
+    400040: koy_b_l
+    400042: koy_b_r
+    400044: koy_c_l
+    400046: koy_c_r
+    400048: kus_a_l
+    400050: kus_a_l 1
+    400052: kus_b_l
+    400054: kus_b_r
+    400056: kus_c_l
+    400058: kus_c_r
+    400060: lip
+    400062: mabuta
+    400064: momo_l
+    400066: momo_r
+    400068: //RootNode
+    400070: mune
+    400072: nak_a_l
+    400074: nak_a_r
+    400076: nak_b_l
+    400078: nak_b_r
+    400080: nak_c_l
+    400082: nak_c_r
+    400084: nino_l
+    400086: nino_r
+    400088: oya_a_l
+    400090: oya_a_r
+    400092: oya_b_l
+    400094: oya_b_r
+    400096: oya_c_l
+    400098: oya_c_r
+    400100: sune_l
+    400102: sune_r
+    400104: tail
+    400106: te_l
+    400108: te_r
+    400110: toe_l
+    400112: toe_r
+    400114: ude_l
+    400116: ude_r
+    400118: waki_l
+    400120: waki_r
+    4300000: Jam
+    9500000: //RootNode
+    13700000: Jam
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #109'
+    second: {fileID: 2100000, guid: b43710b93f716d741b38bc7d8d734967, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #121'
+    second: {fileID: 2100000, guid: b9331f2946965e54aa94a7be0379ecf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #49'
+    second: {fileID: 2100000, guid: dc73ff5ed7bea8144bffe6aae8907134, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #61'
+    second: {fileID: 2100000, guid: 9c826a8fbfa70aa468a91d499b2ea676, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #73'
+    second: {fileID: 2100000, guid: a9e6faa058908974ea2d06978a329568, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #85'
+    second: {fileID: 2100000, guid: 57f33e5a396321c46b00a71842b463f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #97'
+    second: {fileID: 2100000, guid: 1c1de39d3f9f3d742b91243abf0958fc, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: hara
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: momo_l
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: momo_r
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: sune_l
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: sune_r
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: asi_l
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: asi_r
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mune
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kao
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: waki_l
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: waki_r
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: nino_l
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kata_r
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: te_l
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ude_r
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: oya_b_l
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: te_r
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toe_l
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toe_r
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ear_l
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ear_r
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: jaw
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: oya_a_r
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: oya_b_r
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: oya_c_r
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hit_a_r
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hit_b_r
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hit_c_r
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: nak_a_r
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: nak_b_r
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: nak_c_r
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kus_a_l 1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kus_b_r
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kus_c_r
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: koy_a_r
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: koy_b_r
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: koy_c_r
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Monkey(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hara
+      parentName: Monkey(Clone)
+      position: {x: 0, y: 0.07759134, z: 0}
+      rotation: {x: 1.6209509e-15, y: 1, z: 0.0000000059624403, w: -0.00000028212997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mune
+      parentName: hara
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kao
+      parentName: mune
+      position: {x: -2.1514637e-23, y: 0.0481253, z: 1.4438228e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lip
+      parentName: kao
+      position: {x: 2.1514637e-23, y: 0.023569243, z: -0.046811182}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jaw
+      parentName: kao
+      position: {x: 2.1514637e-23, y: 0.025533373, z: -0.01309408}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hair
+      parentName: kao
+      position: {x: 2.1514637e-23, y: 0.09394759, z: -0.05505625}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ear_l
+      parentName: kao
+      position: {x: 0.04255562, y: 0.05555432, z: -0.0011904725}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ear_r
+      parentName: kao
+      position: {x: -0.04255562, y: 0.05555432, z: -0.0011904725}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mabuta
+      parentName: kao
+      position: {x: 2.1514637e-23, y: 0.06154195, z: -0.052376192}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: waki_l
+      parentName: mune
+      position: {x: 0.020179156, y: 0.033439018, z: -0.003048}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kata_l
+      parentName: waki_l
+      position: {x: 0.010307496, y: 0.000000003027916, z: -1.8924474e-10}
+      rotation: {x: 0.00000013767875, y: 0.7071068, z: -0.7071067, w: 0.00000019949603}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nino_l
+      parentName: kata_l
+      position: {x: -0.0100584, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 7.6106164e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ude_l
+      parentName: nino_l
+      position: {x: -0.01699267, y: 0, z: 0.000000003027916}
+      rotation: {x: 0, y: 0, z: 7.6106164e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: te_l
+      parentName: ude_l
+      position: {x: -0.022053348, y: 0, z: -0.000000027251243}
+      rotation: {x: 0.2867236, y: 0.62661356, z: -0.22423287, w: 0.68910426}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: oya_a_l
+      parentName: te_l
+      position: {x: -0.0027737012, y: -0.008063939, z: -0.008122587}
+      rotation: {x: 0.46174866, y: 0.0000004229597, z: -0.00000022017889, w: 0.8870109}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: oya_b_l
+      parentName: oya_a_l
+      position: {x: 0.000000003027916, y: -0.01188721, z: 0}
+      rotation: {x: 0.000000014901248, y: 2.842171e-14, z: -4.2351895e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: oya_c_l
+      parentName: oya_b_l
+      position: {x: 0.000000027251243, y: -0.0039623673, z: 0}
+      rotation: {x: 0.000000014901248, y: 2.842171e-14, z: -4.2351895e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nak_a_l
+      parentName: te_l
+      position: {x: 0.0007924571, y: -0.02316481, z: -0.000914399}
+      rotation: {x: 2.517402e-13, y: 0.00000047683707, z: -0.00000049999994, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: nak_b_l
+      parentName: nak_a_l
+      position: {x: -0.000000024223327, y: -0.0060959943, z: -3.784895e-10}
+      rotation: {x: 1.577803e-14, y: -2.842171e-14, z: 2.842171e-14, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: nak_c_l
+      parentName: nak_b_l
+      position: {x: 0.000000027251243, y: -0.0048767976, z: 0.0000011426598}
+      rotation: {x: 1.5778042e-14, y: -2.842171e-14, z: 4.484389e-28, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hit_a_l
+      parentName: te_l
+      position: {x: 0.00079245406, y: -0.02316481, z: -0.006095998}
+      rotation: {x: 0.13052647, y: 0.00000047275768, z: -0.00000006223988, w: 0.9914448}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: hit_b_l
+      parentName: hit_a_l
+      position: {x: -0, y: -0.005486402, z: -0.000000001513958}
+      rotation: {x: 0.000000014901433, y: -7.450717e-15, z: -0.00000050000006, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: hit_c_l
+      parentName: hit_b_l
+      position: {x: 0.000000006055832, y: -0.004572274, z: -0.000000001513958}
+      rotation: {x: 0.000000014901433, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: kus_a_l
+      parentName: te_l
+      position: {x: 0.0007924601, y: -0.02255523, z: 0.003962399}
+      rotation: {x: -0.08715573, y: 0.0000005186004, z: -0.0000004565382, w: 0.9961947}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: kus_b_l
+      parentName: kus_a_l
+      position: {x: 0.000000003027916, y: -0.0057911677, z: -0.0000006585717}
+      rotation: {x: 2.0037279e-13, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kus_c_l
+      parentName: kus_b_l
+      position: {x: -0, y: -0.004267242, z: -0.00000043450592}
+      rotation: {x: 2.0037279e-13, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: koy_a_l
+      parentName: te_l
+      position: {x: 0.0007924813, y: -0.022250356, z: 0.008229597}
+      rotation: {x: -0.2588192, y: 0.00000012940954, z: -0.00000048296283, w: 0.9659258}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: koy_b_l
+      parentName: koy_a_l
+      position: {x: -0, y: -0.0051816, z: -0.000000009083748}
+      rotation: {x: 8.748885e-15, y: -5.3290705e-15, z: 4.6623424e-29, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: koy_c_l
+      parentName: koy_b_l
+      position: {x: -0, y: -0.0036576013, z: 0.000000003027916}
+      rotation: {x: 8.748885e-15, y: -5.3290705e-15, z: 4.6623424e-29, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: waki_r
+      parentName: mune
+      position: {x: -0.0201803, y: 0.03343902, z: -0.003048}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kata_r
+      parentName: waki_r
+      position: {x: -0.010307322, y: -0.000000024223327, z: 1.8924474e-10}
+      rotation: {x: -0.70710707, y: 3.0882998e-22, z: -3.0882978e-22, w: 0.7071066}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nino_r
+      parentName: kata_r
+      position: {x: -0.0100584, y: 1.8924474e-10, z: 0}
+      rotation: {x: 0.00000050000006, y: -0.0000005, z: 2.3679745e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ude_r
+      parentName: nino_r
+      position: {x: -0.0169926, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 3.6284316e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: te_r
+      parentName: ude_r
+      position: {x: -0.022052305, y: -1.8924474e-10, z: 0.000000024223327}
+      rotation: {x: 0.49999994, y: 0.5000001, z: -0.49999994, w: 0.5000001}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: oya_a_r
+      parentName: te_r
+      position: {x: 0.00277368, y: -0.00806391, z: -0.008122588}
+      rotation: {x: 0.46174866, y: -0.00000023087432, z: -0.00000044350537, w: 0.8870109}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: oya_b_r
+      parentName: oya_a_r
+      position: {x: 0.000000024223327, y: -0.0118872225, z: 0}
+      rotation: {x: 0.0000000149011585, y: 1.4210855e-14, z: -5.3290705e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: oya_c_r
+      parentName: oya_b_r
+      position: {x: 0.000000003027916, y: -0.0039624036, z: 0}
+      rotation: {x: 0.0000000149011585, y: 1.4210855e-14, z: -5.3290705e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hit_a_r
+      parentName: te_r
+      position: {x: -0.0007924813, y: -0.023164798, z: -0.0060953638}
+      rotation: {x: 0.10024152, y: 0.00061692274, z: -0.004682852, w: 0.9949519}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: hit_b_r
+      parentName: hit_a_r
+      position: {x: -0, y: -0.00548639, z: -0.00000063889024}
+      rotation: {x: -1.6307444e-14, y: -7.1054274e-15, z: -1.1587136e-28, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hit_c_r
+      parentName: hit_b_r
+      position: {x: -0.000000003027916, y: -0.004571305, z: 0}
+      rotation: {x: -1.6307444e-14, y: -7.1054274e-15, z: -1.1587136e-28, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nak_a_r
+      parentName: te_r
+      position: {x: -0.0007924813, y: -0.023164798, z: -0.0009143992}
+      rotation: {x: 8.070403e-15, y: 1.4210855e-14, z: -1.1468732e-28, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: nak_b_r
+      parentName: nak_a_r
+      position: {x: -0.000000003027916, y: -0.0060959943, z: 0}
+      rotation: {x: 6.49138e-14, y: -3.6899223e-27, z: -5.684342e-14, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: nak_c_r
+      parentName: nak_b_r
+      position: {x: 0.000000024223327, y: -0.0048767976, z: 3.784895e-10}
+      rotation: {x: 8.070374e-15, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kus_a_l 1
+      parentName: te_r
+      position: {x: -0.00079247827, y: -0.022555195, z: 0.003962399}
+      rotation: {x: -0.061236583, y: -0.00036391604, z: -0.0041733966, w: 0.99811447}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: kus_b_r
+      parentName: kus_a_l 1
+      position: {x: 0.000000027251243, y: -0.0057911496, z: -0.000001473081}
+      rotation: {x: -1.0328768e-14, y: -7.1054274e-15, z: 1.4210855e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kus_c_r
+      parentName: kus_b_r
+      position: {x: -0, y: -0.0042672297, z: -0.0000013474225}
+      rotation: {x: -1.0328766e-14, y: -1.4210855e-14, z: -1.467806e-28, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: koy_a_r
+      parentName: te_r
+      position: {x: -0.0007924813, y: -0.022250343, z: 0.0082295975}
+      rotation: {x: -0.053017158, y: -0.0034342697, z: -0.012820569, w: 0.9985054}
+      scale: {x: 1, y: 0.9999997, z: 0.9999997}
+    - name: koy_b_r
+      parentName: koy_a_r
+      position: {x: 0.000000024223327, y: -0.005181606, z: -0.000000003027916}
+      rotation: {x: -0.000000014900878, y: -2.842171e-14, z: -4.2350842e-22, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: koy_c_r
+      parentName: koy_b_r
+      position: {x: -0.000000006055832, y: -0.0036575831, z: 0.000000003027916}
+      rotation: {x: -0.000000014900878, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: kosi
+      parentName: hara
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tail
+      parentName: kosi
+      position: {x: -0, y: -0.010719283, z: 0.028665729}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: momo_r
+      parentName: kosi
+      position: {x: -0.015240001, y: -0.02286, z: -1.0603074e-15}
+      rotation: {x: 0.4999999, y: 0.5000002, z: -0.4999999, w: -0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sune_r
+      parentName: momo_r
+      position: {x: -0.023074072, y: 1.4438228e-15, z: 0.000000001513958}
+      rotation: {x: 5.1160434e-15, y: 0.00000047683716, z: -2.4395196e-21, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: asi_r
+      parentName: sune_r
+      position: {x: -0.021833558, y: -0.000000025399997, z: 0.000000001513958}
+      rotation: {x: 0.49999994, y: 0.5000001, z: -0.49999994, w: 0.5000001}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: toe_r
+      parentName: asi_r
+      position: {x: -0, y: -0.008229597, z: -0.0204219}
+      rotation: {x: 2.8421716e-14, y: 6.131519e-15, z: -2.842171e-14, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: momo_l
+      parentName: kosi
+      position: {x: 0.015240001, y: -0.02286, z: -1.7822187e-15}
+      rotation: {x: 0.4999999, y: 0.5000002, z: -0.4999999, w: -0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sune_l
+      parentName: momo_l
+      position: {x: -0.023074094, y: 4.3314686e-15, z: 0.000000001513958}
+      rotation: {x: 5.1160434e-15, y: 0.00000047683716, z: -2.4395196e-21, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: asi_l
+      parentName: sune_l
+      position: {x: -0.021833535, y: -0.0000000254, z: 0.000000001513958}
+      rotation: {x: 0.49999994, y: 0.5000001, z: -0.49999994, w: 0.5000001}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: toe_l
+      parentName: asi_l
+      position: {x: -0, y: -0.008229591, z: -0.0204219}
+      rotation: {x: 2.8421716e-14, y: 6.131519e-15, z: -2.842171e-14, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: Jam
+      parentName: Monkey(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
