@@ -14,6 +14,8 @@ public class EnemySight : MonoBehaviour {
     GameObject m_playerGO;
     Vector3 m_directionToPlayer;
 
+
+
     private void Awake()
     {
         GetComponent<SphereCollider>().radius = m_sightRadius;
