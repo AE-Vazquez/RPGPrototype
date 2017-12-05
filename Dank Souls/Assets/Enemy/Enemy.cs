@@ -8,7 +8,15 @@ public class Enemy : CharacterBase {
 
     [SerializeField] float m_chaseRadius;
     [SerializeField] float m_attackRadius;
+
     [SerializeField] float m_rangedAttackRadius;
+    [SerializeField] float m_rangedDamage = 8f;
+    [SerializeField] float m_rangedCooldown = 1f;
+    [SerializeField] GameObject m_rangedProjectile;
+    [SerializeField] Transform m_projectileSpawn;
+
+    private  IEnumerator shootingCoroutine;
+    bool m_isShooting=false;
 
     private Vector3 m_initialPosition;
 
@@ -22,6 +30,7 @@ public class Enemy : CharacterBase {
     {
         m_AICharacterControl = GetComponent<AICharacterControl>();
         m_navMeshAgent = GetComponent<NavMeshAgent>();
+        
 
     }
     
@@ -43,29 +52,61 @@ public class Enemy : CharacterBase {
 
         aux_distanceToPlayer = Vector3.Distance(m_playerGO.transform.position, transform.position);
 
-        if (aux_distanceToPlayer <= m_rangedAttackRadius)
+        if (m_isShooting)
         {
-            //TODO: ranged attack against player
-            Debug.Log("Ranged Attack against player");
-        }
-        else if (aux_distanceToPlayer <= m_chaseRadius)
-        {
-            if(aux_distanceToPlayer<=m_attackRadius)
+            if (aux_distanceToPlayer > m_rangedAttackRadius)
             {
-                //TODO: melee attack against player
-                Debug.Log("Melee Attack against player");
+                StopCoroutine(shootingCoroutine);
+                m_isShooting = false;
             }
-            else
-            {
-                m_AICharacterControl.SetTarget(m_playerGO.transform);
-            }
-            
         }
         else
         {
-            m_navMeshAgent.SetDestination(m_initialPosition);
+
+            if (aux_distanceToPlayer <= m_rangedAttackRadius)
+            {
+                m_isShooting = true;
+                shootingCoroutine = ShootCoroutine(m_playerGO, m_rangedCooldown);
+                StartCoroutine(shootingCoroutine);
+
+            }
+            else if (aux_distanceToPlayer <= m_chaseRadius)
+            {
+                if (aux_distanceToPlayer <= m_attackRadius)
+                {
+                    //TODO: melee attack against player
+                    Debug.Log("Melee Attack against player");
+                }
+                else
+                {
+                    m_AICharacterControl.SetTarget(m_playerGO.transform);
+                }
+
+            }
+            else
+            {
+                m_navMeshAgent.SetDestination(m_initialPosition);
+            }
         }
+
 	}
+
+    IEnumerator ShootCoroutine(GameObject target,float interval)
+    {
+        while (m_isShooting)
+        {
+            yield return new WaitForSeconds(interval);
+            ShootAtTarget(target);
+        }
+
+    }
+
+    void ShootAtTarget(GameObject target)
+    {
+        GameObject projectile = Instantiate(m_rangedProjectile, m_projectileSpawn);
+        projectile.GetComponent<Projectile>().SetDamage(m_rangedDamage);
+        projectile.GetComponent<Projectile>().Launch(target);
+    }
 
     void OnDrawGizmos()
     {
