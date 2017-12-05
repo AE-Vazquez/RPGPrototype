@@ -14,7 +14,7 @@ public class CharacterBase : MonoBehaviour,IDamageable
         get { return m_currentHealthPoints / m_maxHealthPoints; }
     }
 
-    void Awake()
+    protected void Awake()
     {
         m_currentHealthPoints = m_maxHealthPoints;
 
@@ -28,10 +28,15 @@ public class CharacterBase : MonoBehaviour,IDamageable
 
         if(m_currentHealthPoints<=0)
         {
-           
-            //TODO: Handle death
+
+            Die();
 
         }
 
+    }
+
+    protected virtual void Die()
+    {
+        Destroy(gameObject);
     }
 }

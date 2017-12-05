@@ -13,9 +13,9 @@ public class Projectile : MonoBehaviour
         m_damageCaused = damage;
     }
 
-    public void Launch(GameObject target)
+    public void Launch(Vector3 target)
     {
-        GetComponent<Rigidbody>().velocity = (target.transform.position - transform.position).normalized * m_projectileSpeed;
+        GetComponent<Rigidbody>().velocity = (target - transform.position).normalized * m_projectileSpeed;
     }
 
 	void OnTriggerEnter(Collider other)

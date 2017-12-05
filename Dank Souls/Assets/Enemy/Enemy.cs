@@ -14,6 +14,7 @@ public class Enemy : CharacterBase {
     [SerializeField] float m_rangedCooldown = 1f;
     [SerializeField] GameObject m_rangedProjectile;
     [SerializeField] Transform m_projectileSpawn;
+    [SerializeField] Vector3 m_aimOffset = new Vector3(0, 1, 0);
 
     private  IEnumerator shootingCoroutine;
     bool m_isShooting=false;
@@ -28,6 +29,7 @@ public class Enemy : CharacterBase {
 
     void Awake()
     {
+        base.Awake();
         m_AICharacterControl = GetComponent<AICharacterControl>();
         m_navMeshAgent = GetComponent<NavMeshAgent>();
         
@@ -105,7 +107,7 @@ public class Enemy : CharacterBase {
     {
         GameObject projectile = Instantiate(m_rangedProjectile, m_projectileSpawn);
         projectile.GetComponent<Projectile>().SetDamage(m_rangedDamage);
-        projectile.GetComponent<Projectile>().Launch(target);
+        projectile.GetComponent<Projectile>().Launch(target.transform.position+m_aimOffset);
     }
 
     void OnDrawGizmos()
