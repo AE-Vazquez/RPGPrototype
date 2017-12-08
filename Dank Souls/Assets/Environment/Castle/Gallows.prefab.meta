@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: a03193f235dd8aa4fa0c752a09806c87
+guid: f7906ab022fc2e041bf6e527392231e2
 labels:
 - Donkey
 timeCreated: 1491324158
 licenseType: Free
 NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
